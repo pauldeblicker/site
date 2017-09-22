@@ -1,0 +1,31 @@
+.header {
+    align-items: center;
+    background-color: #FFFFFF;
+    color: #D0D0CE;
+    display: flex;
+    height: $layout-header-height;
+    justify-content: center;
+    
+    @media (max-width: 839px) {
+        box-shadow: 0 4px 2px -2px #D0D0CE;
+    }
+
+    &__logo {
+        flex: 0 0 150px;
+        height: inherit;
+    }
+
+    &__nav-toggle {
+        @media (min-width: 840px) {
+            display: none;
+        }
+        
+        align-items: center;
+        display: flex;
+        height: 48px;
+        justify-content: center;
+        left: 0;    
+        position: fixed;
+        width: 48px; 
+    }
+}

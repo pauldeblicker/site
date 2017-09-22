@@ -1,0 +1,93 @@
+.page {
+    display: flex;
+    flex-direction: column;
+
+    &__home {
+        background-position: center;
+        box-shadow: inset 0 0 1em #111111;
+        color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        height: 800px;
+        justify-content: flex-end;
+
+        @media (max-width: 479px) {
+            background: 
+                linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+                url('~project/client/theme/image/home/home_phone.jpg');
+            height: 300px;
+        }
+
+        @media (min-width: 480px) and (max-width: 839px) {
+            background:
+                linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+                url('~project/client/theme/image/home/home_tablet.jpg');
+            height: 500px;
+        }
+
+        @media (min-width: 840px) and (max-width: 1366px) {    
+            background: 
+                linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+                url('~project/client/theme/image/home/home_laptop.jpg');
+        }
+
+        @media (min-width: 1367px) and (max-width: 1920px) {
+            background: 
+                linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+                url('~project/client/theme/image/home/home_1080p.jpg');
+        }
+
+        @media (min-width: 1921px) {
+            background: 
+                linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+                url('~project/client/theme/image/home/home_4k.jpg');
+        }
+
+        &__first-text {
+            font-size: 4em;
+            padding: 0 0 0 36px;
+            
+            @media (max-width: 479px) {
+                font-size: 1.5em; 
+            }
+
+            @media (min-width: 480px) and (max-width: 839px) {
+                font-size: 3em; 
+            }
+        }
+
+        &__second-text {
+            font-size: 6em;
+            font-weight: bold;
+            padding: 0 0 36px 36px;
+            
+            @media (max-width: 479px) {
+                font-size: 2.5em; 
+            }
+
+            @media (min-width: 480px) and (max-width: 839px) {
+                font-size: 4.5em; 
+            }
+        }
+    }
+
+    &__philosophy {
+        align-items: center;
+        background-color: #FFFFFF;
+        background-image: linear-gradient(60deg, #F9F9F9 50%, #FFFFFF 50%);
+        color: #75787B;
+        display: flex;
+        justify-content: center;
+        min-height: 800px;
+    }
+
+    &__project {
+        align-items: center;
+        background-color: #FFFFFF;
+        background-image: linear-gradient(60deg, #FFFFFF 50%, #F9F9F9 50%);
+        color: #75787B;
+        display: flex;
+        justify-content: center;
+        min-height: 800px;
+    }
+}
